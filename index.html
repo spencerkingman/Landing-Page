@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Spencer Kingman Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Crimson+Text|Permanent+Marker|Rock+Salt|Suez+One" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#"><img id="icon-inverted" src="thumbprint-dot-inverse.png" alt="icon-inverted"></a>
+      <div class="iconContainer">
+        <div class="icon">
+        </div>
+      </div>
+      <div id="name_and_nav">
+        <a href="#"><h1>Spencer Kingman</h1></a> 
+        <br/>
+        <nav>
+          <ul>
+            <li><a href="development/development.html">Development</a><span class="nav_decorations">&nbsp&nbsp&nbsp&nbsp|</span></li>
+            <li><a href="mathematics/mathematics.html">Math Education</a><span class="nav_decorations">&nbsp&nbsp&nbsp&nbsp|</span></li>
+            <li><a href="tutoring/tutoring.html">Tutoring</a><span class="nav_decorations">&nbsp&nbsp&nbsp&nbsp|</span></li>
+            <li><a href="music/music.html">Music</a><span class="nav_decorations"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container clearfix">  
+
+        <div class="content">
+          <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. </p>
+          </section>
+        </div>
+
+        <div class="sidebar">
+          <aside>
+            <img id="cards" src="cards-dot.png" alt="Playing cards with baby">
+
+            <h2>
+              <a href="https://www.linkedin.com/start/view-full-profile?_ed=0_3bjkhTQZsPwGZaqpqVLl6WgznR7w2iw2fYATPQDyg7ygdVh0uiiy-jLP7gqNjSov82v19iE40q85mpP-TTueue&amp;trk=ndir_viewmore"><i class ="fa fa-linkedin"></i></a>
+              <a href="https://www.github.com/spencerkingman"><i class ="fa fa-github"></i></a>
+              <a href="https://twitter.com/passwordcrawl"><i class ="fa fa-twitter"></i></a>
+            </h2>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+    
+    <div id="darkBar"></div>
+
+    <footer>
+      <p id="lastUpdate"></p> 
+    </footer>
+
+
+  </body>
+
+  <script language="Javascript">
+    var monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+
+    var monthIndex = Number(document.lastModified.substr(0, 2));
+    var day = (document.lastModified.substr(3, 2));
+    var year = document.lastModified.substr(6, 4);
+    var formattedDate = "Last modified on " + monthNames[monthIndex-1] + ' ' + day + ', ' + year;
+
+    var node = document.getElementById('lastUpdate');
+    var text = document.createTextNode(formattedDate);
+
+    node.appendChild(text);
+    document.getElementById('lastUpdate').replaceChild(node);
+
+  </script>
+
+</html>
