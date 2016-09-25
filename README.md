@@ -1,2 +1,2 @@
 # landing-page
-This page introduces me and links to my professional resources online (for develpment, education, music
+This page introduces me and links to my professional resources online (for develpment, education, tutoring, music).
